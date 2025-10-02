@@ -3,96 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <title>AniHub</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background: #3b0073;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #d8aef3;
-      padding: 10px 20px;
-    }
-    header h1 {
-      color: #1e0066;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .icons {
-      display: flex;
-      gap: 15px;
-      color: #1e0066;
-      font-size: 20px;
-      cursor: pointer;
-    }
-    .burger {
-      cursor: pointer;
-      font-size: 24px;
-      color: #1e0066;
-      background: none;
-      border: none;
-    }
-    .container {
-      display: flex;
-      height: calc(100vh - 60px);
-    }
-    .sidebar {
-      background: #a36fd9;
-      width: 160px;
-      padding: 15px;
-      display: none;
-      flex-direction: column;
-      gap: 12px;
-      border-bottom-right-radius: 25px;
-    }
-    .sidebar button {
-      background: #7b1d1d;
-      color: white;
-      border: none;
-      padding: 6px 12px;
-      border-radius: 12px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .sidebar button:hover {
-      background: #a82b2b;
-    }
-    main {
-      flex: 1;
-      background: #e5e5e5;
-    }
-    .sidebar.active {
-      display: flex;
-    }
-  </style>
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
   <header>
-    <button class="burger" onclick="toggleMenu()">☰</button>
-    <h1>AniHub</h1>
+    <div class="menu-icon">
+      <img src="/Icons/Menu_icon.svg.png" height="60px">
+    </div>
+    <div class="logo">AniHub</div>
     <div class="icons">
-      <img src="Icons/lupa.psd.png" alt="Search" width="22" height="22">
-      <img src="Icons/cart.psd.png" alt="Cart" width="22" height="22">
+      <div class="search-box" id="searchBox">
+        <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+        <img src="/Icons/lupa.psd.png" height="50px" width="50px" id="searchIcon">
+      </div>
+      <div class="cart-icon">
+        <img src="/Icons/cart.psd.png" height="60px" width="55px">
+      </div>
     </div>
   </header>
 
-  <div class="container">
-    <aside class="sidebar" id="menu">
-      <button>Manga</button>
-      <button>Clothing</button>
-      <button>Toys</button>
-      <button>Exclusive</button>
-    </aside>
-    <main></main>
-  </div>
+  <main>
+    <div class="products-wrapper">
+      <div class="products-section">
+        <div class="section-title">New in</div>
+        <div class="products-container">
+          <div class="product"></div><div class="product"></div>
+          <div class="product"></div><div class="product"></div>
+        </div>
+      </div>
+      <div class="products-section">
+        <div class="section-title">For sale</div>
+        <div class="products-container">
+          <div class="product"></div><div class="product"></div>
+          <div class="product"></div><div class="product"></div>
+        </div>
+      </div>
+    </div>
 
-  <script>
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("active");
-    }
-  </script>
+    <div class="products-wrapper">
+      <div class="products-section">
+        <div class="section-title">Exclusive</div>
+        <div class="products-container">
+          <div class="product"></div><div class="product"></div>
+          <div class="product"></div><div class="product"></div>
+        </div>
+      </div>
+      <div class="products-section">
+        <div class="section-title">Last Chance!</div>
+        <div class="products-container">
+          <div class="product"></div><div class="product"></div>
+          <div class="product"></div><div class="product"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="home.js"></script>
 </body>
 </html>
