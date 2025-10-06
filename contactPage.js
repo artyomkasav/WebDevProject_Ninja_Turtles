@@ -15,13 +15,10 @@ const menuPanel = document.createElement("div");
 menuPanel.classList.add("menu-panel");
 menuPanel.innerHTML = `
   <ul class="menu-list">
-    <li><a href="home.html">Home</a></li>
     <li>Figures</li>
     <li>Manga</li>
     <li>Posters</li>
     <li>Accessories</li>
-    
-    <li><a href="contactPage.html">Contact us</a></li>
   </ul>
 `;
 document.body.appendChild(menuPanel);
