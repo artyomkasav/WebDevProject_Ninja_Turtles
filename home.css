@@ -152,20 +152,22 @@ main {
 
 .menu-panel {
   position: fixed;
-  top: 148px;
+  top: 80px;
   left: -280px;
   width: 280px;
-  height: 950px;
+  height: 450px;
   background: rgba(200, 150, 230, 0.95);
   border-bottom-right-radius: 70px;
   transition: 0.4s ease;
   z-index: 20;
+  font-family: fantasy;
   
   color: #1a0051;
   font-size: 20px;
 }
 .menu-panel.active {
   left: 0;
+  font-size: 30px;
 }
 .menu-list {
   list-style: none;
