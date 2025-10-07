@@ -59,6 +59,10 @@ body {
 /* 
  "VIEW SHOP" BUTTON
  */
+
+a{
+  text-decoration: none;
+}
 #button {
   background-color: rgba(200, 100, 197, 0.568); 
   font-family: fantasy;
