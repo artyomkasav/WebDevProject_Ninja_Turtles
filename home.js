@@ -15,7 +15,7 @@ const menuPanel = document.createElement("div");
 menuPanel.classList.add("menu-panel");
 menuPanel.innerHTML = `
   <ul class="menu-list">
-    <li><a href="home.html">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li>Figures</li>
     <li>Manga</li>
     <li>Posters</li>
