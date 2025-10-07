@@ -4,7 +4,7 @@
 body {
   
   margin: 0;
-  
+  background-image: url(/Icons/Main_back.png);
 }
 /* NAVBAR START */
 .navbar {
