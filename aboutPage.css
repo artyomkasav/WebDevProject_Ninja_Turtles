@@ -1,71 +1,84 @@
+/* 
+ BASIC PAGE SETTINGS
+ */
 body {
-    background-image: url('thumb-1920-1377793.png');         
-    background-position: center;   
-    background-repeat: no-repeat; 
-    height: 100vh;
-    
-  }
-  
-  #fullContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-  }
+  background-image: url('thumb-1920-1377793.png'); 
+  background-position: center;                     
+  background-repeat: no-repeat;                    
+  height: 100vh;                                   
+}
 
+/* 
+ MAIN CONTAINER 
+ */
+#fullContent {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+  justify-content: center;
+}
+
+/* 
+ MAIN TITLE — AniHub
+ */
+#header {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  margin-top: 40px;
+  color: rgba(214, 164, 221, 1); 
+  font-size: 12rem;               
+  font-family: fantasy;          
+  text-shadow:
+    0 0 5px rgb(106, 39, 101),
+    0 0 10px rgb(106, 39, 101),
+    0 0 20px rgb(106, 39, 101),
+    0 0 40px rgb(106, 39, 101),
+    0 0 80px rgb(106, 39, 101);
+}
+
+/* 
+ ABOUT TEXT BOX
+*/
+#content {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
   
-  #AniHub {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    margin-top: 40px;
-    color: rgba(214, 164, 221, 1);
-    font-size: 12rem;
-    font-family: fantasy;
-    text-shadow:
-      0 0 5px rgb(106, 39, 101),
-      0 0 10px rgb(106, 39, 101),
-      0 0 20px rgb(106, 39, 101),
-      0 0 40px rgb(106, 39, 101),
-      0 0 80px rgb(106, 39, 101);
-  }
+  border-radius: 35px;                         
+  background-color: rgba(200, 100, 197, 0.568);
+  padding: 1.5rem 2rem;                         
+  max-width: 800px;                            
   
-  #textAbout {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center;
-    border-radius: 35px;
-    background-color: rgba(255, 255, 255, 0.368);
-    padding: 1.5rem 2rem;
-    max-width: 800px;
-    font-size: 2rem;
-    color: rgba(214, 164, 221, 1);
-    font-family: fantasy;
-    text-shadow:
-      0 0 5px rgb(145, 71, 140),
-      0 0 10px rgb(145, 71, 140),
-      0 0 20px rgb(145, 71, 140),
-      0 0 40px rgb(145, 71, 140),
-      0 0 80px rgb(145, 71, 140);
-  }
+  font-size: 2.2rem;                            
+  color: rgb(136, 51, 147);                    
+  font-family: fantasy;                        
+}
+
+/* 
+ "VIEW SHOP" BUTTON
+ */
+#button {
+  background-color: rgba(200, 100, 197, 0.568); 
+  font-family: fantasy;
+  color: rgba(214, 164, 221, 1);                
+  font-size: 8vh;
+  margin-top: 40px;
   
-  #button {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center;
-    margin-top: 30px;
-    font-family: fantasy;
-    border: 10px solid rgba(234, 147, 220, 0.584);
-    background-color: rgba(255, 255, 255, 0.625);
-    font-size: 2rem;
-    padding: 12px 40px;
-    border-radius: 12px;
-  }
+  height: 100px;
+  width: 50vh;
+  display: flex;
+  justify-content: center;                     
+  align-items: center;                          
+  text-align: center;
   
-  #button:hover {
-    border: 10px solid rgba(79, 44, 105, 0.584);
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  
+  border-radius: 10px;                          
+  cursor: pointer;                             
+}
+
+
+#button:hover {
+  background-color: rgba(185, 44, 185, 0.384);  
+  box-shadow: 0px 8px 15px rgba(5, 0, 12, 0.939); 
+}

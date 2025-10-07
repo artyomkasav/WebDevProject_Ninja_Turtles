@@ -7,76 +7,101 @@
     <link rel="stylesheet" href="contactPage.css">
 </head>
 <body>
+
     <!--NAVBAR Start-->
 <header class="navbar">
-  <div class="menu-icon">
-    <img src="/Icons/Menu_icon.svg.png" height="40px" alt="Menu">
-  </div>
-
-  <div class="logo">AniHub</div>
-
-  <div class="actions">
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Search...">
-      <img src="/Icons/lupa.psd.png" id="searchIcon" alt="Search">
+    <div class="menu-icon">
+      <img src="Menu_icon.svg.png" height="40px" alt="Menu">
     </div>
-    <div class="cart-icon">
-      <img src="/Icons/cart.psd.png" height="40px" alt="Cart">
+  
+    <div class="logo">AniHub</div>
+  
+    <div class="actions">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <img src="lupa.psd.png" id="searchIcon" alt="Search">
+      </div>
+      <div class="cart-icon">
+        <img src="cart.psd.png" height="40px" alt="Cart">
+      </div>
     </div>
-  </div>
-</header>
-<!--NAVBAR END-->
+  </header>
+  <!--NAVBAR END-->
     <img id="image" src="2025-09-29 21.39.23.jpg">
     <div id="textBox">
         <div id="header">
-            Contact Us
+            <b>Contact Us</b>
         </div>
 
 
+
+
 <!--FORM-->
-
+<div id="leftSide">
+    <div id="contBox">
             <form action="GET">
-                <div id="userName">
-                    Enter your name:
+                
+                    <div class="inpText">Enter your name:</div>
                     <input type="text">
-                </div>
+                
 
-                <div id="userEmail">
-                    Enter your email:
+                
+                    <div class="inpText">Enter your email:</div>
                     <input type="email">
-                </div>
+                
 
-                <div id="userText">
-                    Enter your text:
+                
+                    <div class="inpText">Enter the text:</div>
                     <input type="text">
+                
+
+                <div id="contactButtom">
+                    Contact Us
                 </div>
 
             </form>
 
-<!--END OF THE FORM-->
+<!--FORM END-->
 
 <!--ABOUT US-->
+<div id="rightSide">
             <div id="ourFullEmail">
                 <div id="contactText">
                     Contact
                 </div>    
-                <div id="ourEmail">
-                    anihub@shopdublim.ie
+                <div class="aboutUs" id="ourEmail">
+                    anihub@shopdublin.ie
                 </div>
             </div>
 
-            <div id="ourFullEmail">
+            <div class="aboutUs" id="ourFullEmail">
                 <div id="contactText">
                     Based in
                 </div>    
-                <div id="ourAdress">
+                <div class="aboutUs" id="ourAdress">
                     Dublin
                 </div>
             </div>
+        
+<!--ABOUT US END-->
 
-<!--END OF ABOUT US-->
+<!-- ICONS -->
+    <div id="icons">       
+        <a class = "icon" id = 'instagramIcon' href="https://www.instagram.com/ani.hubshop?igsh=MW1xN2IybXlidDkwMQ%3D%3D&utm_source=qr"><img src="instagram.png" alt="instagram" height="50px" width="50px"></a>
 
-        </div>
-    <script src="home.js"></script>
+        <a class = "icon" id = 'facebookIcon' href="https://www.facebook.com/share/1BXHeLCMVs/?mibextid=wwXIfr"><img src="facebook.png" alt="facebook" height="50px" width="50px"></a>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+<!-- ICONS END-->
+
+
+
+
+
+<!-- ICONS -->
+<script src="contactPage.js"></script>
 </body>
 </html>

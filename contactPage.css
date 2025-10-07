@@ -1,13 +1,137 @@
-#image{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 80vh;
-   
-}
+/* 
+  BASIC PAGE SETTINGS
+ */
 body {
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  background-image: url(Main_back.png);
+  background-repeat: no-repeat;
 }
+
+/* 
+ MAIN IMAGE
+ */
+#image {
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+  height: 80vh;
+}
+
+/* 
+ MAIN TEXT BOX
+*/
+#textBox {
+  color: rgba(27, 15, 122, 1);
+  font-family: fantasy;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+#header {
+  font-size: 100px;
+  margin-left: 25px;
+}
+
+/* 
+ INPUT FIELDS
+*/
+input {
+  margin-bottom: 30px;
+  border: none;             
+  border-bottom: 2px solid rgba(27, 15, 122, 1); 
+  outline: none;            
+  padding: 5px;
+  font-size: 20px;
+  background: transparent;  
+}
+
+input:hover {
+  border-bottom: 3px solid rgba(27, 15, 122, 1); 
+}
+
+/*
+ CONTACT BOX CONTAINER
+*/
+#contBox {
+  border-top-right-radius: 50px;
+  background-color: rgba(244, 183, 244, 0.553);
+  display: flex;                  
+  justify-content: space-between; 
+  align-items: flex-start;        
+  width: 90vh;
+  height: 60vh;
+  padding: 20px;
+  box-sizing: border-box; 
+  font-size: 4vh;
+  gap: 40px;
+}
+
+#leftSide {
+  flex: 1; 
+  margin-right: 20px;
+}
+
+#rightSide {
+  flex: 1; 
+  padding-left: 20px; 
+  margin-top: 20px;
+}
+
+.inpText {
+  display: block;
+  margin-bottom: -15px; 
+}
+
+/* 
+ ABOUT US SECTION
+ */
+.aboutUs {
+  margin-bottom: 55px;
+}
+
+/*
+ CONTACT BUTTON
+ */
+#contactButtom {
+  margin-top: 20px;
+  height: 50px;
+  width: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  border: solid 2px rgba(27, 15, 122, 1);
+  cursor: pointer;
+}
+
+#contactButtom:hover {
+  background-color: rgba(185, 44, 185, 0.384);
+  box-shadow: 0px 8px 15px rgba(5, 0, 12, 0.939);
+}
+
+/* 
+ SOCIAL ICONS
+ */
+#icons {
+  display: flex;
+  gap: 25px;
+}
+
+.icon {
+  border-radius: 15px;
+  height: 50px;
+}
+
+.icon:hover {
+  box-shadow: 0px 8px 15px rgba(5, 0, 12, 0.939);
+}
+
+/* 
+ NAVBAR
+*/
 .navbar {
   width: 100%;
   height: 80px;
@@ -40,7 +164,9 @@ body {
   gap: 20px;
 }
 
-/* Поиск */
+/* 
+ SEARCH BOX
+ */
 .search-box {
   position: relative;
   display: flex;
@@ -70,24 +196,17 @@ body {
   height: 30px;
 }
 
-/* Корзина */
+/* 
+ CART ICON
+ */
 .cart-icon img {
   cursor: pointer;
   height: 40px;
 }
 
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  background-color: rgba(200, 150, 230, 0.9);
-  position: relative;
-  z-index: 10;
-}
-/*Navbar end */
-/*Navbar items creation */
+/* 
+ MENU PANEL & OVERLAY
+ */
 .overlay {
   position: fixed;
   top: 0;
@@ -101,6 +220,7 @@ header {
   transition: 0.3s;
   z-index: 5;
 }
+
 .overlay.active {
   opacity: 1;
   pointer-events: auto;
@@ -116,24 +236,28 @@ header {
   border-bottom-right-radius: 70px;
   transition: 0.4s ease;
   z-index: 20;
-  
   color: #1a0051;
   font-size: 20px;
 }
+
 .menu-panel.active {
   left: 0;
 }
+
 .menu-list {
   list-style: none;
   padding: 0;
   margin-top: 50px;
 }
+
 .menu-list li {
   margin: 20px 0;
   cursor: pointer;
 }
 
-/* Панель корзины */
+/*
+ CART PANEL
+*/
 .cart-panel {
   position: fixed;
   top: 100px;
@@ -147,16 +271,18 @@ header {
   padding: 15px;
   color: black;
 }
+
 .cart-panel.active {
   right: 20px;
 }
+
 .cart-items {
   margin-top: 20px;
 }
+
 .cart-item {
   background: rgba(0,0,0,0.1);
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 8px;
 }
-/* END OF THE NAVBAR*/
