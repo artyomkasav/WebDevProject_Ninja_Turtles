@@ -2,21 +2,14 @@
  BASIC PAGE SETTINGS
  */
 body {
-  background-image: url('thumb-1920-1377793.png'); 
-  background-position: center;                     
+  margin: 0;
+  background-image: url('/Icons/aboutback.png');   
+  background-color: rgb(255, 220, 250); 
+                        
   background-repeat: no-repeat;                    
-  height: 100vh;                                   
+  height: 160vh;                                   
 }
 
-/* 
- MAIN CONTAINER 
- */
-#fullContent {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;   
-  justify-content: center;
-}
 
 /* 
  MAIN TITLE — AniHub
@@ -24,7 +17,7 @@ body {
 #header {
   display: flex;
   flex-direction: column; 
-  justify-content: center;
+  align-items: center;
   margin-top: 40px;
   color: rgba(214, 164, 221, 1); 
   font-size: 12rem;               
@@ -37,23 +30,66 @@ body {
     0 0 80px rgb(106, 39, 101);
 }
 
+
+
+
 /* 
  ABOUT TEXT BOX
 */
-#content {
+#fullContent {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center;
-  
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.content{
   border-radius: 35px;                         
   background-color: rgba(200, 100, 197, 0.568);
-  padding: 1.5rem 2rem;                         
-  max-width: 800px;                            
+
+  display: flex;
+  position: absolute;
+  flex-direction: column;
   
+
   font-size: 2.2rem;                            
   color: rgb(136, 51, 147);                    
-  font-family: fantasy;                        
+  font-family: fantasy;  
+  z-index: 1;  
+}
+
+
+
+#content1 {
+  top: 50vh;
+  left: 5vw;
+
+
+  padding: 1.5rem 2rem;                         
+  width: 65vh;
+  height: 40%;                                           
+}
+
+#content2 {
+  top: 80vh;
+  right: 5vw;
+
+
+
+  padding: 1.5rem 2rem;                         
+  width: 65vh;
+  height: auto;                                           
+}
+
+#content3 {
+  top: 130vh;
+  left: 5vw;
+
+  
+  padding: 1.5rem 2rem;                         
+  width: 65vh;
+  height: auto;                                           
 }
 
 /* 
@@ -62,20 +98,35 @@ body {
 
 a{
   text-decoration: none;
-}
-#button {
-  background-color: rgba(200, 100, 197, 0.568); 
-  font-family: fantasy;
-  color: rgba(214, 164, 221, 1);                
-  font-size: 8vh;
-  margin-top: 40px;
-  
-  height: 100px;
-  width: 50vh;
   display: flex;
   justify-content: center;                     
   align-items: center;                          
   text-align: center;
+}
+
+#button a {
+  padding-top: 2vh; 
+}
+
+#button {
+  top: 130vh;
+  left: 65vw;
+
+  margin-top: 14vh;
+  margin-right: 10%;
+
+  height: 15vh;
+  width: 50vh;
+  background-color: rgba(200, 100, 197, 0.568); 
+  font-family: fantasy;
+  color: rgba(214, 164, 221, 1);                
+  font-size: 8vh;
+
+  border: 10px solid rgb(232, 120, 216);
+  
+
+  
+  
   
   border-radius: 10px;                          
   cursor: pointer;                             
@@ -85,4 +136,74 @@ a{
 #button:hover {
   background-color: rgba(185, 44, 185, 0.384);  
   box-shadow: 0px 8px 15px rgba(5, 0, 12, 0.939); 
+}
+
+/*
+ICONS
+*/
+
+#layingimg {
+  top: 60vh;
+  right: 15vw;
+  z-index: 2; 
+}
+
+#sittingimg {
+  top: 105vh;
+  left: 15vw;
+  z-index: 2; 
+}
+
+#contactBar{
+  display: flex;
+  position: absolute;
+  top: 180vh;
+
+  width: 100vw;
+  height: 20vh;
+  background-color: rgb(248, 83, 232);
+  
+}
+
+
+.contBar{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  font-weight: bold;
+  color: rgb(252, 208, 251);
+  font-family: fantasy;
+  font-size: 1.5rem;
+
+  margin-top: 4vh;
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+
+
+/*
+ICONS OF CONTENTBAR
+*/
+
+
+
+#icons{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 3vh;
+  left: 70vw;
+
+  gap: 3vw;
+}
+
+
+.icon {
+  border-radius: 15px;
+  height: 50px;
+}
+
+.icon:hover {
+  box-shadow: 0px 8px 15px rgba(5, 0, 12, 0.939);
 }
