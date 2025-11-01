@@ -143,15 +143,17 @@ ICONS
 */
 
 #layingimg {
-  top: 60vh;
+  top: 58.5vh;
   right: 15vw;
   z-index: 2; 
+  background-color: transparent;
 }
 
 #sittingimg {
-  top: 105vh;
-  left: 15vw;
+  top: 95.5vh;
+  left: 11vw;
   z-index: 2; 
+  background-color: transparent;
 }
 
 #contactBar{
