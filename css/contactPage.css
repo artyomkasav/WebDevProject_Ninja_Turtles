@@ -3,7 +3,14 @@
 */
 body {
   margin: 0;
+<<<<<<< HEAD:css/contactPage.css
   background: url(../Icons/Main_back.png) ;
+=======
+  font-family: Arial, sans-serif;
+  background: url("/Icons/Main_back.png") no-repeat center center/cover;
+  min-height: 100vh;
+  color: white;
+>>>>>>> 1b68d71 (Update):contactPage.css
 }
 
 /* 
@@ -91,7 +98,7 @@ body {
 }
 
 .menu-list {
-  list-style: none;
+  
   padding: 0;
   margin-top: 50px;
 }
@@ -141,6 +148,8 @@ body {
   bottom: 0;
   right: 100px;
   height: 80vh;
+  pointer-events: none;
+  user-select: none;
 }
 
 /* 
