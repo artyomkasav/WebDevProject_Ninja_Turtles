@@ -3,14 +3,12 @@
 */
 body {
   margin: 0;
-<<<<<<< HEAD:css/contactPage.css
   background: url(../Icons/Main_back.png) ;
-=======
   font-family: Arial, sans-serif;
   background: url("/Icons/Main_back.png") no-repeat center center/cover;
   min-height: 100vh;
   color: white;
->>>>>>> 1b68d71 (Update):contactPage.css
+
 }
 
 /* 
