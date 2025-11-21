@@ -3,129 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AniHub</title>
+    <title>AniHub - Contact</title>
     <link rel="stylesheet" href="../css/contactPage.css">
 </head>
 <body>
-
-    <!--NAVBAR Start-->
+    <!--NAVBAR-->
     <header class="navbar">
         <div class="menu-icon">
-          <img src="../Icons/Menu_icon.svg.png" height="40px" alt="Menu">
+            <img src="../Icons/Menu_icon.svg.png" height="40px" alt="Menu">
         </div>
-      
         <div class="logo">AniHub</div>
-      
         <div class="actions">
-          
-          <div class="cart-icon">
-            <img src="../Icons/cart.psd.png" height="40px" alt="Cart">
-          </div>
+            <div class="cart-icon">
+                <img src="../Icons/cart.psd.png" height="40px" alt="Cart">
+            </div>
         </div>
-      </header>
-       <!--NAVBAR END-->
-      <div class="menu-panel">
-    <ul class="menu-list">
-      <li><a href="../index.html">Home</a></li>
-      <li>Figures</li>
-      <li>Manga</li>
-      <li>Posters</li>
-      <li>Accessories</li>
-      <li><a href="aboutPage.html">About Us</a></li>
-      <li><a href="contactPage.html">Contact us</a></li>
-    </ul>
-  </div>
+    </header>
 
-  <!-- CART PANEL -->
-  <div class="cart-panel">
-    <h3>Your Cart</h3>
-    <div class="cart-items">
-      <div class="cart-item">Product 1</div>
-      <div class="cart-item">Product 2</div>
+    <!-- MENU PANEL -->
+    <div class="menu-panel">
+        <ul class="menu-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Figures</a></li>
+            <li><a href="#">Manga</a></li>
+            <li><a href="#">Posters</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="aboutPage.html">About Us</a></li>
+            <li><a href="contactPage.html">Contact us</a></li>
+        </ul>
     </div>
-  </div>
 
-  <!-- OVERLAY -->
-        <div class="overlay"></div>
-
- 
-    <img alt="Character with the phone" id="image" src="../Icons/2025-09-29 21.39.23.jpg">
-    <div id="textBox">
-        <div id="header">
-            <b>Contact Us</b>
+    <!-- CART PANEL -->
+    <div class="cart-panel">
+        <h3>Your Cart</h3>
+        <div class="cart-items">
+            <div class="cart-item">Product 1</div>
+            <div class="cart-item">Product 2</div>
         </div>
+    </div>
 
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
 
-
-
-<!--FORM-->
-<main>
-  <div id="leftSide">
-      <div id="contBox">
-          <div id="inputt">
-              <form action="GET">
-
-                      <div class="inpText">Enter your name:</div>
-                      <input type="text">
-                
-
-                
-                     <div class="inpText">Enter your email:</div>
-                     <input type="email">
-                
-
-                
-                     <div class="inpText">Enter the text:</div>
-                      <input type="text">
-                
-
-                   <div id="contactButtom">
-                     Contact Us
-                  </div>
-          </div>
-              </form>
-
-<!--FORM END-->
-
-<!--ABOUT US-->
-<div id="rightSide">
-            <div id="ourFullEmail">
-                <div id="contactText">
-                    Contact
-                </div>    
-                <div class="aboutUs" id="ourEmail">
-                    anihub@shopdublin.ie
-                </div>
-            </div>
-
-            <div class="aboutUs" id="ourFullEmail">
-                <div id="contactText">
-                    Based in
-                </div>    
-                <div class="aboutUs" id="ourAdress">
-                    Dublin
-                </div>
-            </div>
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <img alt="Character with the phone" id="image" src="../Icons/2025-09-29 21.39.23.jpg">
         
-<!--ABOUT US END-->
+        <div id="textBox">
+            <div id="header">
+                <b>Contact Us</b>
+            </div>
 
-<!-- ICONS -->
-    <div id="icons">       
-        <a class = "icon" id = 'instagramIcon' href="https://www.instagram.com/ani.hubshop?igsh=MW1xN2IybXlidDkwMQ%3D%3D&utm_source=qr" target="_blank"><img src="../Icons/instagram.png" alt="instagram" height="50px" width="50px"></a>
+            <div id="contBox">
+                <!-- LEFT SIDE - FORM -->
+                <div id="leftSide">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label class="inpText">Enter your name:</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="inpText">Enter your email:</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="inpText">Enter your message:</label>
+                            <textarea name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" id="contactButton">Contact Us</button>
+                    </form>
+                </div>
 
-        <a class = "icon" id = 'facebookIcon' href="https://www.facebook.com/share/1BXHeLCMVs/?mibextid=wwXIfr" target="_blank""><img src="../Icons/facebook.png" alt="facebook" height="50px" width="50px"></a>
-    </div>
-    </div>
-    </div> 
-    </div>
-  </div>
-<!-- ICONS END-->
-</main>
+                <!-- RIGHT SIDE - INFO -->
+                <div id="rightSide">
+                    <div class="info-block">
+                        <div class="contactText">Contact</div>
+                        <div class="aboutUs">anihub@shopdublin.ie</div>
+                    </div>
+                    <div class="info-block">
+                        <div class="contactText">Based in</div>
+                        <div class="aboutUs">Dublin</div>
+                    </div>
+                    
+                    <!-- SOCIAL ICONS -->
+                    <div id="icons">
+                        <a class="icon" href="https://www.instagram.com/ani.hubshop" target="_blank">
+                            <img src="../Icons/instagram.png" alt="instagram">
+                        </a>
+                        <a class="icon" href="https://www.facebook.com/share/1BXHeLCMVs/" target="_blank">
+                            <img src="../Icons/facebook.png" alt="facebook">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-
-
-
-
-  <script src="../contactPage.js"></script>
+    <script src="../contactPage.js"></script>
 </body>
 </html>

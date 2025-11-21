@@ -2,210 +2,335 @@
  BASIC PAGE SETTINGS
  */
 body {
-  margin: 0;
-  background-image: url('../Icons/aboutback.png');   
-  background-color: rgb(255, 220, 250); 
-                        
-  background-repeat: no-repeat;                    
-  height: 160vh;                                   
+margin: 0;
+background-image: url('../Icons/aboutback.png');   
+background-color: rgb(255, 220, 250); 
+background-repeat: no-repeat;
+min-height: 100vh;
+overflow-x: hidden;
+position: relative;
+padding-bottom: 20vh;
 }
-
-
 /* 
  MAIN TITLE — AniHub
  */
 #header {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  margin-top: 40px;
-  color: rgba(214, 164, 221, 1); 
-  font-size: 12rem;               
-  font-family: fantasy;          
-  text-shadow:
-    0 0 5px rgb(106, 39, 101),
-    0 0 10px rgb(106, 39, 101),
-    0 0 20px rgb(106, 39, 101),
-    0 0 40px rgb(106, 39, 101),
-    0 0 80px rgb(106, 39, 101);
+display: flex;
+flex-direction: column; 
+align-items: center;
+margin-top: 40px;
+color: rgba(214, 164, 221, 1); 
+font-size: 12rem;               
+font-family: fantasy;          
+text-shadow:
+0 0 5px rgb(106, 39, 101),
+0 0 10px rgb(106, 39, 101),
+0 0 20px rgb(106, 39, 101),
+0 0 40px rgb(106, 39, 101),
+0 0 80px rgb(106, 39, 101);
 }
-
-
-
-
 /* 
  ABOUT TEXT BOX
 */
 #fullContent {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
+position: relative;
+min-height: 140vh;
 }
-
-
 .content{
-  border-radius: 35px;                         
-  background-color: rgba(200, 100, 197, 0.568);
-
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  
-
-  font-size: 2.2rem;                            
-  color: rgb(136, 51, 147);                    
-  font-family: fantasy;  
-  z-index: 1;  
+border-radius: 35px;                         
+background-color: rgba(200, 100, 197, 0.568);
+display: flex;
+position: absolute;
+flex-direction: column;
+font-size: 2.2rem;                            
+color: rgb(136, 51, 147);                    
+font-family: fantasy;  
+z-index: 1;  
 }
-
-
-
 #content1 {
-  top: 50vh;
-  left: 5vw;
-
-
-  padding: 1.5rem 2rem;                         
-  width: 65vh;
-  height: 40%;                                           
+top: 50vh;
+left: 5vw;
+padding: 1.5rem 2rem;                         
+width: 65vh;
+height: 40%;                                           
 }
-
 #content2 {
-  top: 80vh;
-  right: 5vw;
-
-
-
-  padding: 1.5rem 2rem;                         
-  width: 65vh;
-  height: auto;                                           
+top: 80vh;
+right: 5vw;
+padding: 1.5rem 2rem;                         
+width: 65vh;
+height: auto;                                           
 }
-
 #content3 {
-  top: 130vh;
-  left: 5vw;
-
-  
-  padding: 1.5rem 2rem;                         
-  width: 65vh;
-  height: auto;                                           
+top: 130vh;
+left: 5vw;
+padding: 1.5rem 2rem;                         
+width: 65vh;
+height: auto;                                           
 }
-
 /* 
  "VIEW SHOP" BUTTON
  */
-
 a{
-  text-decoration: none;
-  display: flex;
-  justify-content: center;                     
-  align-items: center;                          
-  text-align: center;
+text-decoration: none;
+display: flex;
+justify-content: center;                     
+align-items: center;                          
+text-align: center;
 }
-
 #button a {
-  padding-top: 2vh; 
+padding-top: 2vh; 
 }
-
 #button {
-  top: 130vh;
-  left: 65vw;
-
-  margin-top: 14vh;
-  margin-right: 10%;
-
-  height: 15vh;
-  width: 50vh;
-  background-color: rgba(200, 100, 197, 0.568); 
-  font-family: fantasy;
-  color: rgba(214, 164, 221, 1);                
-  font-size: 8vh;
-
-  border: 10px solid rgb(232, 120, 216);
-  
-
-  
-  
-  
-  border-radius: 10px;                          
-  cursor: pointer;                             
+top: 130vh;
+left: 65vw;
+margin-top: 14vh;
+margin-right: 10%;
+height: 15vh;
+width: 50vh;
+background-color: rgba(200, 100, 197, 0.568); 
+font-family: fantasy;
+color: rgba(214, 164, 221, 1);                
+font-size: 8vh;
+border: 10px solid rgb(232, 120, 216);
+border-radius: 10px;                          
+cursor: pointer;                             
 }
-
-
 #button:hover {
-  background-color: rgba(185, 44, 185, 0.384);  
-  box-shadow: 0px 8px 15px rgba(5, 0, 12, 0.939); 
+background-color: rgba(185, 44, 185, 0.384);  
+box-shadow: 0px 8px 15px rgba(5, 0, 12, 0.939); 
 }
-
 /*
 ICONS
 */
-
 #layingimg {
-  top: 58.5vh;
-  right: 15vw;
-  z-index: 2; 
-  background-color: transparent;
+top: 58.5vh;
+right: 15vw;
+z-index: 2; 
+background-color: transparent;
 }
-
 #sittingimg {
-  top: 95.5vh;
-  left: 11vw;
-  z-index: 2; 
-  background-color: transparent;
+top: 95.5vh;
+left: 11vw;
+z-index: 2; 
+background-color: transparent;
 }
-
 #contactBar{
-  display: flex;
-  position: absolute;
-  top: 180vh;
-
-  width: 100vw;
-  height: 20vh;
-  background-color: rgb(248, 83, 232);
-  
+display: flex;
+position: relative;
+margin-top: 50vh;
+width: 100vw;
+height: 20vh;
+background-color: rgb(248, 83, 232);
 }
-
-
 .contBar{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-  font-weight: bold;
-  color: rgb(252, 208, 251);
-  font-family: fantasy;
-  font-size: 1.5rem;
-
-  margin-top: 4vh;
-  margin-left: 6vw;
-  margin-right: 6vw;
+display: flex;
+flex-direction: column;
+position: relative;
+font-weight: bold;
+color: rgb(252, 208, 251);
+font-family: fantasy;
+font-size: 1.5rem;
+margin-top: 4vh;
+margin-left: 6vw;
+margin-right: 6vw;
 }
-
-
 /*
 ICONS OF CONTENTBAR
 */
-
-
-
 #icons{
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  top: 3vh;
-  left: 70vw;
-
-  gap: 3vw;
+display: flex;
+flex-direction: row;
+position: absolute;
+top: 3vh;
+left: 70vw;
+gap: 3vw;
 }
-
-
 .icon {
-  border-radius: 15px;
-  height: 50px;
+border-radius: 15px;
+height: 50px;
+}
+.icon:hover {
+box-shadow: 0px 8px 15px rgba(5, 0, 12, 0.939);
 }
 
-.icon:hover {
-  box-shadow: 0px 8px 15px rgba(5, 0, 12, 0.939);
+/* ========================================
+   MOBILE RESPONSIVE (768px и меньше)
+   ======================================== */
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: scroll;
+    padding-bottom: 0;
+  }
+
+  /* HEADER */
+  #header {
+    font-size: 5rem;
+    margin-top: 20px;
+  }
+
+  /* CONTENT */
+  #fullContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: auto;
+    padding: 20px 0;
+  }
+
+  .content {
+    position: relative !important;
+    width: 85vw !important;
+    height: auto !important;
+    font-size: 1.4rem;
+    padding: 1.2rem 1.5rem !important;
+    margin: 0 0 20px 0;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+  }
+
+  #content1 {
+    order: 2;
+    margin-top: 0;
+    padding-top: 80px !important;
+  }
+
+  #content2 {
+    order: 4;
+    padding-top: 80px !important;
+  }
+
+  #content3 {
+    order: 5;
+  }
+
+  /* IMAGES */
+  #layingimg {
+    position: relative !important;
+    order: 1;
+    top: auto !important;
+    right: auto !important;
+    left: auto !important;
+    width: 300px;
+    height: auto;
+    margin: 30px 0 -70px 0;
+    z-index: 3;
+  }
+
+  #sittingimg {
+    position: relative !important;
+    order: 3;
+    top: auto !important;
+    left: auto !important;
+    width: 280px;
+    height: auto;
+    margin: 0 0 -70px 0;
+    z-index: 3;
+  }
+
+  /* BUTTON */
+  #button {
+    position: relative !important;
+    order: 6;
+    top: auto !important;
+    left: auto !important;
+    width: 70vw !important;
+    height: 12vh;
+    margin: 30px auto !important;
+    font-size: 5vh;
+    border-width: 6px;
+  }
+
+  #button a {
+    padding-top: 0;
+  }
+
+  /* CONTACT BAR */
+  #contactBar {
+    position: relative;
+    top: auto;
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+
+  .contBar {
+    margin: 15px 20px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  #icons {
+    position: relative;
+    top: auto;
+    left: auto;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 30px;
+  }
+}
+
+/* ========================================
+   EXTRA SMALL MOBILE (480px и меньше)
+   ======================================== */
+@media (max-width: 480px) {
+  #header {
+    font-size: 3.5rem;
+    margin-top: 15px;
+  }
+
+  .content {
+    width: 90vw !important;
+    font-size: 1.2rem;
+    padding: 1rem 1.2rem !important;
+  }
+
+  #content1 {
+    padding-top: 70px !important;
+  }
+
+  #content2 {
+    padding-top: 70px !important;
+  }
+
+  #layingimg {
+    width: 250px;
+    margin: 20px 0 -60px 0;
+  }
+
+  #sittingimg {
+    width: 230px;
+    margin: 0 0 -60px 0;
+  }
+
+  #button {
+    width: 80vw !important;
+    height: 10vh;
+    font-size: 4vh;
+    border-width: 5px;
+  }
+
+  .contBar {
+    font-size: 1rem;
+    margin: 10px 15px;
+  }
+
+  #icons {
+    gap: 20px;
+  }
+
+  .icon img {
+    width: 40px;
+    height: 40px;
+  }
 }
