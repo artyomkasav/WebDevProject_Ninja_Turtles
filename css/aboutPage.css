@@ -1,10 +1,10 @@
 /* 
  BASIC PAGE SETTINGS
  */
-body {
+ body {
   margin: 0;
-  background-image: url('/Icons/aboutback.png');   
-  background-color: rgb(255, 220, 250); 
+  background-image: url('../Icons/aboutback.png');   
+  background-color: rgb(249, 188, 240); 
                         
   background-repeat: no-repeat;                    
   height: 160vh;                                   
@@ -54,9 +54,10 @@ body {
   
 
   font-size: 2.2rem;                            
-  color: rgb(136, 51, 147);                    
+  color: rgb(255, 255, 255);                    
   font-family: fantasy;  
   z-index: 1;  
+  font-weight: bold;
 }
 
 
@@ -106,6 +107,7 @@ a{
 
 #button a {
   padding-top: 2vh; 
+  color: white;
 }
 
 #button {
@@ -119,8 +121,9 @@ a{
   width: 50vh;
   background-color: rgba(200, 100, 197, 0.568); 
   font-family: fantasy;
-  color: rgba(214, 164, 221, 1);                
+  color: rgb(255, 255, 255);                
   font-size: 8vh;
+  font-weight: bold;
 
   border: 10px solid rgb(232, 120, 216);
   
@@ -174,9 +177,10 @@ ICONS
   position: relative;
 
   font-weight: bold;
-  color: rgb(252, 208, 251);
+  color: rgb(107, 17, 110);
   font-family: fantasy;
   font-size: 1.5rem;
+  font-weight: bold;
 
   margin-top: 4vh;
   margin-left: 6vw;

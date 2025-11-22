@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/loginPage.css">
+</head>
+<body>
+    <script src="../loginPage.js"></script>
+    <div id="form">
+        <header>
+            <h1 id="loginHeader">Login</h1>
+        </header>
+        <main>
+            <form action="POST">
+                <input alt="Username input" placeholder="Username" id="userName" type="text">
+                <input alt="User password input" placeholder="Password" id="userPassword" type="password">
+                <div id="remember">
+                    <input id="chbox" type="checkbox"><label for="chbox"> Remember me</label>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <a id="forgot" href="">Forgot a password?</a>
+            <button alt = "login button" id="loginButton">Login</button>
+            <p id="register">Don't have an account? <b>Register</b></p>
+        </footer>
+    </div>
+</body>
+</html>
