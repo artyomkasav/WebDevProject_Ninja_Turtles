@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniHub - Cart</title>
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <header class="navbar">
+        <div class="menu-icon">
+            <img src="../Icons/Menu_icon.svg.png" height="40px" alt="Menu">
+        </div>
+        <div class="logo">AniHub</div>
+        <div class="actions">
+            <div class="cart-icon">
+                <img src="../Icons/cart.psd.png" height="40px" alt="Cart">
+                <span class="cart-count">3</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MENU PANEL -->
+    <div class="menu-panel">
+        <ul class="menu-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Figures</a></li>
+            <li><a href="#">Manga</a></li>
+            <li><a href="#">Posters</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="aboutPage.html">About Us</a></li>
+            <li><a href="contactPage.html">Contact us</a></li>
+        </ul>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <div class="cart-container">
+            <h1 class="cart-title">Your Cart</h1>
+
+            <!-- CART ITEMS -->
+            <div class="cart-items" id="cartItems">
+                <!-- Items will be rendered by JS -->
+            </div>
+
+            <!-- EMPTY CART MESSAGE -->
+            <div class="empty-cart" id="emptyCart">
+                <div class="empty-icon">🛒</div>
+                <h2>Your cart is empty</h2>
+                <p>Looks like you haven't added anything yet</p>
+                <a href="../index.html" class="continue-shopping">Continue Shopping</a>
+            </div>
+
+            <!-- CART SUMMARY -->
+            <div class="cart-summary" id="cartSummary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">€0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping:</span>
+                    <span id="shipping">€5.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">€0.00</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">
+                    Proceed to Checkout
+                </button>
+                <a href="../index.html" class="continue-link">← Continue Shopping</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- NOTIFICATION -->
+    <div class="notification" id="notification">
+        Item removed from cart
+    </div>
+
+    <script src="../cartUtils.js"></script>
+</body>
+</html>

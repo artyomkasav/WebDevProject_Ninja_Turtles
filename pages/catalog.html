@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniHub - Catalog</title>
+    <link rel="stylesheet" href="../css/catalog.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <header class="navbar">
+        <div class="menu-icon">
+            <img src="../Icons/Menu_icon.svg.png" height="40px" alt="Menu">
+        </div>
+        <div class="logo">AniHub</div>
+        <div class="actions">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search products...">
+                <button class="search-btn" id="searchBtn">🔍</button>
+            </div>
+            <div class="cart-icon">
+                <img src="../Icons/cart.psd.png" height="40px" alt="Cart">
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MENU PANEL -->
+    <div class="menu-panel">
+        <ul class="menu-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="catalog.html?category=figures">Figures</a></li>
+            <li><a href="catalog.html?category=manga">Manga</a></li>
+            <li><a href="catalog.html?category=posters">Posters</a></li>
+            <li><a href="catalog.html?category=accessories">Accessories</a></li>
+            <li><a href="aboutPage.html">About Us</a></li>
+            <li><a href="contactPage.html">Contact us</a></li>
+        </ul>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <!-- HERO SECTION -->
+        <section class="category-hero" id="categoryHero">
+            <h1 class="category-title" id="categoryTitle">All Products</h1>
+            <p class="category-desc" id="categoryDesc">Browse our amazing collection</p>
+        </section>
+
+        <!-- FILTERS -->
+        <section class="filters-section">
+            <div class="filters-container">
+                <!-- Category Pills -->
+                <div class="category-pills">
+                    <button class="pill active" data-category="all">All</button>
+                    <button class="pill" data-category="figures">Figures</button>
+                    <button class="pill" data-category="manga">Manga</button>
+                    <button class="pill" data-category="posters">Posters</button>
+                    <button class="pill" data-category="accessories">Accessories</button>
+                </div>
+
+                <!-- Sort & Filter -->
+                <div class="sort-filter">
+                    <select id="sortSelect" class="sort-select">
+                        <option value="default">Sort by</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Name: A-Z</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                    
+                    <div class="price-filter">
+                        <span>€</span>
+                        <input type="number" id="minPrice" placeholder="Min" min="0">
+                        <span>—</span>
+                        <input type="number" id="maxPrice" placeholder="Max" min="0">
+                        <button class="apply-filter" id="applyPrice">Go</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS GRID -->
+        <section class="products-section">
+            <div class="products-count">
+                <span id="productsCount">0</span> products found
+            </div>
+            
+            <div class="products-grid" id="productsGrid">
+                <!-- Products rendered by JS -->
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon">🔍</div>
+                <h2>No products found</h2>
+                <p>Try adjusting your filters or search query</p>
+                <button class="reset-btn" id="resetFilters">Reset Filters</button>
+            </div>
+
+            <!-- Loading -->
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Loading products...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- QUICK VIEW MODAL -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="quickViewModal">
+            <button class="modal-close" id="modalClose">✕</button>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-details">
+                    <span class="modal-category" id="modalCategory"></span>
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <p class="modal-description" id="modalDescription"></p>
+                    <div class="modal-price" id="modalPrice"></div>
+                    <div class="modal-actions">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" id="qtyMinus">−</button>
+                            <span class="qty-value" id="qtyValue">1</span>
+                            <button class="qty-btn" id="qtyPlus">+</button>
+                        </div>
+                        <button class="add-to-cart-btn" id="modalAddToCart">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTIFICATION -->
+    <div class="notification" id="notification"></div>
+
+    <script src="../cartUtils.js"></script>
+    <script src="../catalog.js"></script>
+</body>
+</html>
