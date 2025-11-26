@@ -11,7 +11,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: url("/Icons/Main_back.png") no-repeat center center/cover;
+    background: url("../Icons/Main_back.png") no-repeat center center/cover;
     min-height: 100vh;
     color: white;
     overflow-x: hidden;
