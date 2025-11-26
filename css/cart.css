@@ -1,6 +1,4 @@
-/* ==================
-   BASIC SETTINGS
-   ================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +18,7 @@ a {
     color: inherit;
 }
 
-/* ==================
-   NAVBAR
-   ================== */
+/* Navbar*/
 .navbar {
     height: 80px;
     background-color: rgba(200, 150, 230, 0.9);
@@ -77,9 +73,7 @@ a {
     justify-content: center;
 }
 
-/* ==================
-   OVERLAY & MENU
-   ================== */
+/* Overlay  */
 .overlay {
     position: fixed;
     top: 0;
@@ -134,9 +128,7 @@ a {
     color: #4a0080;
 }
 
-/* ==================
-   MAIN CONTENT
-   ================== */
+/* MAain  */
 .main-content {
     padding-top: 100px;
     padding-bottom: 40px;
@@ -157,9 +149,7 @@ a {
     text-shadow: 0 0 20px rgba(244, 183, 244, 0.5);
 }
 
-/* ==================
-   CART ITEMS
-   ================== */
+/* Cart items  */
 .cart-items {
     display: flex;
     flex-direction: column;
@@ -237,9 +227,7 @@ a {
     color: white;
 }
 
-/* ==================
-   QUANTITY CONTROLS
-   ================== */
+/* Quantity controls */
 .quantity-controls {
     display: flex;
     align-items: center;
@@ -281,9 +269,7 @@ a {
     text-align: center;
 }
 
-/* ==================
-   REMOVE BUTTON
-   ================== */
+/* Remove from cart */
 .remove-btn {
     position: absolute;
     top: 15px;
@@ -308,9 +294,7 @@ a {
     transform: rotate(90deg);
 }
 
-/* ==================
-   EMPTY CART
-   ================== */
+/* Empty cart */
 .empty-cart {
     display: none;
     flex-direction: column;
@@ -357,9 +341,7 @@ a {
     box-shadow: 0 10px 30px rgba(244, 183, 244, 0.4);
 }
 
-/* ==================
-   CART SUMMARY
-   ================== */
+/* Cart summary  */
 .cart-summary {
     background: rgba(244, 183, 244, 0.1);
     border: 1px solid rgba(244, 183, 244, 0.3);
@@ -425,9 +407,7 @@ a {
     color: #f4b7f4;
 }
 
-/* ==================
-   NOTIFICATION
-   ================== */
+/* Notification */
 .notification {
     position: fixed;
     bottom: 30px;
@@ -448,18 +428,14 @@ a {
     opacity: 1;
 }
 
-/* ==========================================
-   RESPONSIVE - TABLET
-   ========================================== */
+/* Resp. Tablet  */
 @media (max-width: 1024px) {
     .cart-summary {
         max-width: 100%;
     }
 }
 
-/* ==========================================
-   RESPONSIVE - MOBILE
-   ========================================== */
+/* Resp. Mobile */
 @media (max-width: 768px) {
     .navbar {
         height: 60px;
@@ -562,9 +538,7 @@ a {
     }
 }
 
-/* ==========================================
-   RESPONSIVE - SMALL MOBILE
-   ========================================== */
+/* Resp. Small Mobile*/
 @media (max-width: 480px) {
     .cart-container {
         padding: 0 15px;

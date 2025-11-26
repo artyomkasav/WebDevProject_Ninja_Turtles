@@ -1,23 +1,21 @@
-// ==========================================
-// CART UTILITIES - Подключай на ВСЕХ страницах
-// ==========================================
+
 
 const CartUtils = {
     STORAGE_KEY: 'anihub_cart',
     
-    // Получить корзину
+    // Get cart items 
     getCart() {
         const saved = localStorage.getItem(this.STORAGE_KEY);
         return saved ? JSON.parse(saved) : [];
     },
     
-    // Сохранить корзину
+    // save cart
     saveCart(cart) {
         localStorage.setItem(this.STORAGE_KEY, JSON.stringify(cart));
         this.updateCartBadge();
     },
     
-    // Добавить товар в корзину
+    // Add to cart
     addItem(product) {
         // product = { id, name, category, price, image }
         const cart = this.getCart();
@@ -37,7 +35,7 @@ const CartUtils = {
         return cart;
     },
     
-    // Удалить товар
+    // Remove item 
     removeItem(id) {
         let cart = this.getCart();
         cart = cart.filter(item => item.id !== id);
@@ -45,7 +43,7 @@ const CartUtils = {
         return cart;
     },
     
-    // Изменить количество
+    // Change quantity
     updateQuantity(id, quantity) {
         const cart = this.getCart();
         const item = cart.find(i => i.id === id);
@@ -61,25 +59,25 @@ const CartUtils = {
         return cart;
     },
     
-    // Очистить корзину
+    // Clear cart
     clearCart() {
         localStorage.removeItem(this.STORAGE_KEY);
         this.updateCartBadge();
     },
     
-    // Получить общее количество товаров
+    // Item total
     getTotalItems() {
         const cart = this.getCart();
         return cart.reduce((sum, item) => sum + item.quantity, 0);
     },
     
-    // Получить общую сумму
+    // Price total
     getTotalPrice() {
         const cart = this.getCart();
         return cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     },
     
-    // Обновить badge на иконке корзины
+    // Badge update
     updateCartBadge() {
         const badge = document.querySelector('.cart-count');
         if (badge) {
@@ -89,9 +87,9 @@ const CartUtils = {
         }
     },
     
-    // Показать уведомление о добавлении
+    // Notification when added
     showAddedNotification(productName) {
-        // Создаём notification если его нет
+        
         let notification = document.getElementById('cart-notification');
         
         if (!notification) {
@@ -126,40 +124,8 @@ const CartUtils = {
         }, 2500);
     }
 };
-
-// Обновляем badge при загрузке страницы
+//Update badge when page is loaded
 document.addEventListener('DOMContentLoaded', () => {
     CartUtils.updateCartBadge();
 });
 
-// ==========================================
-// КАК ИСПОЛЬЗОВАТЬ:
-// ==========================================
-// 
-// 1. Подключи этот файл на ВСЕХ страницах:
-//    <script src="../js/cartUtils.js"></script>
-//
-// 2. На странице товара добавь кнопку "Add to Cart":
-//    <button class="add-to-cart" 
-//            data-id="1" 
-//            data-name="Naruto Figure" 
-//            data-category="Figures" 
-//            data-price="49.99" 
-//            data-image="../Icons/naruto.jpg">
-//        Add to Cart
-//    </button>
-//
-// 3. Добавь обработчик клика:
-//    document.querySelectorAll('.add-to-cart').forEach(btn => {
-//        btn.addEventListener('click', () => {
-//            CartUtils.addItem({
-//                id: parseInt(btn.dataset.id),
-//                name: btn.dataset.name,
-//                category: btn.dataset.category,
-//                price: parseFloat(btn.dataset.price),
-//                image: btn.dataset.image
-//            });
-//        });
-//    });
-//
-// ==========================================

@@ -1,6 +1,4 @@
-// ==================
-// DEMO PRODUCTS DATA
-// ==================
+
 const PRODUCTS = [
     // FIGURES
     { id: 1, name: "Naruto Uzumaki Figure", category: "figures", price: 49.99, image: "../Icons/placeholder.png", description: "High-quality PVC figure of Naruto in his iconic pose. Approximately 25cm tall with incredible detail.", badge: "new" },
@@ -43,9 +41,7 @@ const CATEGORY_INFO = {
     accessories: { title: "Accessories", desc: "Cosplay items, keychains, and more" }
 };
 
-// ==================
-// STATE
-// ==================
+// State 
 let currentCategory = 'all';
 let currentSort = 'default';
 let minPrice = null;
@@ -54,9 +50,7 @@ let searchQuery = '';
 let modalQuantity = 1;
 let selectedProduct = null;
 
-// ==================
-// DOM ELEMENTS
-// ==================
+// DOM elemnt 
 const productsGrid = document.getElementById('productsGrid');
 const emptyState = document.getElementById('emptyState');
 const loading = document.getElementById('loading');
@@ -84,9 +78,7 @@ const modalAddToCart = document.getElementById('modalAddToCart');
 
 let menuOpen = false;
 
-// ==================
-// INIT
-// ==================
+//Init 
 function init() {
     // Get category from URL
     const params = new URLSearchParams(window.location.search);
@@ -100,9 +92,7 @@ function init() {
     setupEventListeners();
 }
 
-// ==================
-// RENDER
-// ==================
+// Render
 function renderProducts() {
     let filtered = filterProducts();
     filtered = sortProducts(filtered);
@@ -168,9 +158,7 @@ function updateCategoryUI() {
     });
 }
 
-// ==================
-// MODAL
-// ==================
+// Modal 
 function openModal(productId) {
     selectedProduct = PRODUCTS.find(p => p.id === productId);
     if (!selectedProduct) return;
@@ -194,9 +182,7 @@ function closeModal() {
     selectedProduct = null;
 }
 
-// ==================
-// EVENT LISTENERS
-// ==================
+// Event listener
 function setupEventListeners() {
     // Category pills
     pills.forEach(pill => {
