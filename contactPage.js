@@ -87,10 +87,6 @@ if (contactForm) {
         const email = formData.get('email');
         const message = formData.get('message');
         
-        // Здесь можно добавить отправку формы
-        console.log('Form submitted:', { name, email, message });
-        alert('Thank you for your message! We will contact you soon.');
-        contactForm.reset();
     });
 }
 
@@ -104,3 +100,64 @@ window.addEventListener('resize', () => {
         cartOpen = false;
     }
 });
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+const area = document.getElementById("inputArea");
+const option = document.getElementById("option");
+const subuttn = document.getElementById("contactButton");
+const nInp = document.getElementById("fullName")
+
+option.addEventListener("change", function () {
+    area.innerHTML = "";
+
+    if (this.value === "phone") {
+        area.innerHTML = `
+        <label for="phoneInput" class="enter">Enter phone number:</label>
+        <input id="phoneInput" name="phone" type="text" class="form-control" placeholder="Your phone number">`;
+    } else if (this.value === "email") {
+        area.innerHTML = `
+        <label for="emailInput" class="enter">Enter email address:</label>
+        <input id="emailInput" name="email" type="text" class="form-control" placeholder="Your email address">`;
+    }
+});
+
+
+subuttn.addEventListener("click", function() {
+    const input = area.querySelector("input"); 
+    if (!input) return;
+
+    const value = input.value;
+
+    if (option.value === "phone") {
+        if (!/^\d+$/.test(value)) {
+            alert("Phone number is incorrect, try again");
+            return;
+        }
+    } else if (option.value === "email") {
+        if (!/^[^@]+@[^@]+\.[^@]+$/.test(value)) {
+            alert("Email format is incorrect, try again");
+            return;
+        }
+    } else {
+        alert("Please select Phone or Email");
+        return;
+    }
+
+    alert("Your message has been sent!");
+    input.value = "";
+
+   
+});
+
+subuttn.addEventListener("click", function() {
+    const nameInp = nInp.value
+
+    const words = nameInp.trim().split(/\s+/);
+    if (words.length < 2) {
+        alert("Please, enter FULL name");
+}
+})
