@@ -109,7 +109,8 @@ window.addEventListener('resize', () => {
 const area = document.getElementById("inputArea");
 const option = document.getElementById("option");
 const subuttn = document.getElementById("contactButton");
-const nInp = document.getElementById("fullName")
+const nInp = document.getElementById("fullName");
+const msg = document.getElementById("message");
 
 option.addEventListener("change", function () {
     area.innerHTML = "";
@@ -144,6 +145,10 @@ subuttn.addEventListener("click", function() {
         }
     } else {
         alert("Please select Phone or Email");
+        return;
+    }
+    if (msg.value.trim() === "") {
+        alert("Please enter your message");
         return;
     }
 
