@@ -1,20 +1,3 @@
-const menuPanel = document.querySelector(".menu-panel");
-const menuIcon = document.querySelector(".menu-icon");
-let menuOpen = false;
-
-
-// === MENU ===
-menuIcon.addEventListener("click", () => {
-  menuOpen = !menuOpen;
-  if (menuOpen) {
-    menuPanel.classList.add("active");
-    overlay.classList.add("active");
-    cartPanel.classList.remove("active");
-  } else {
-    menuPanel.classList.remove("active");
-    overlay.classList.remove("active");
-  }
-});
 
 
 

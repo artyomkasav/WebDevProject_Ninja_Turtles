@@ -34,8 +34,13 @@ a {
     backdrop-filter: blur(10px);
 }
 
-.menu-icon img,
+
 .cart-icon img {
+    cursor: pointer;
+    height: 40px;
+}
+
+.menu-icon{
     cursor: pointer;
     height: 40px;
 }

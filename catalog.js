@@ -1,4 +1,7 @@
 
+// === MENU ===
+
+
 const PRODUCTS = [
     // FIGURES
     { id: 1, name: "Naruto Uzumaki Figure", category: "figures", price: 49.99, image: "../Icons/placeholder.png", description: "High-quality PVC figure of Naruto in his iconic pose. Approximately 25cm tall with incredible detail.", badge: "new" },
@@ -201,7 +204,20 @@ function setupEventListeners() {
             window.history.pushState({}, '', url);
         });
     });
-    
+// MENU OPENER
+menuIcon.addEventListener("click", () => {
+  menuOpen = !menuOpen;
+  if (menuOpen) {
+    menuPanel.classList.add("active");
+    overlay.classList.add("active");
+    cartPanel.classList.remove("active");
+  } else {
+    menuPanel.classList.remove("active");
+    overlay.classList.remove("active");
+  }
+});
+
+
     // Sort
     sortSelect.addEventListener('change', () => {
         currentSort = sortSelect.value;
@@ -288,11 +304,7 @@ function setupEventListeners() {
     });
     
     // Menu
-    menuIcon.addEventListener("click", () => {
-        menuOpen = !menuOpen;
-        menuPanel.classList.toggle("active", menuOpen);
-        overlay.classList.toggle("active", menuOpen);
-    });
+    
     
     overlay.addEventListener("click", () => {
         menuPanel.classList.remove("active");
