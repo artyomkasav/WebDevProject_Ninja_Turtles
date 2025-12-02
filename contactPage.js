@@ -151,9 +151,11 @@ subuttn.addEventListener("click", function() {
         alert("Please enter your message");
         return;
     }
-
-    alert("Your message has been sent!");
-    input.value = "";
+    else{
+        alert("Your message has been sent!");
+        input.value = "";
+    }
+    
 
    
 });
